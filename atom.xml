@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.126g.cn/"/>
-  <updated>2019-01-05T15:26:06.061Z</updated>
+  <updated>2019-01-05T15:40:06.240Z</updated>
   <id>https://blog.126g.cn/</id>
   
   <author>
@@ -21,20 +21,15 @@
     <link href="https://blog.126g.cn/posts/hexo-cname/"/>
     <id>https://blog.126g.cn/posts/hexo-cname/</id>
     <published>2019-01-05T15:05:51.000Z</published>
-    <updated>2019-01-05T15:26:06.061Z</updated>
+    <updated>2019-01-05T15:40:06.240Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;刚刚发布完了文章之后我发现没法使用自定义域名访问了&lt;/p&gt;
+      &lt;p&gt;刚刚发布完了文章之后我发现没法使用自定义域名访问了&lt;/p&gt;
 &lt;p&gt;在github中设置了Custom domain后会多出一个CNAME文件&lt;/p&gt;
 &lt;p&gt;CNAME文件的内容就是自定义域名&lt;/p&gt;
-&lt;p&gt;每次&lt;code&gt;hexo
-        
-      
+&lt;p&gt;每次&lt;code&gt;hexo deploy&lt;/code&gt;以后CNAME文件都会被清除&lt;/p&gt;
+&lt;p&gt;解决方法很简，在hexo的source目录下创建一个CNAME文件，内容是自己的域名就好了&lt;/p&gt;
     
     </summary>
     
@@ -48,19 +43,12 @@
     <link href="https://blog.126g.cn/posts/markdown/"/>
     <id>https://blog.126g.cn/posts/markdown/</id>
     <published>2019-01-05T14:07:13.000Z</published>
-    <updated>2019-01-05T14:57:16.829Z</updated>
+    <updated>2019-01-05T15:40:55.016Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Hexo的文章、Github的README文件都要用markdown来写，简记一下Markdown的语法，备忘。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;Hexo的文章、Github的README文件都要用markdown来写，简记一下Markdown的语法，备忘。&lt;/p&gt;
+&lt;p&gt;主要内容：标题 列表 引用 粗体 斜体 链接 图片 表格&lt;br&gt;
     
     </summary>
     
