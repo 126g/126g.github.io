@@ -81,7 +81,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>关于 | 126g Blog - 一位菜鸡的博客</title>
+    <title>标签: Markdown | 126g Blog - 一位菜鸡的博客</title>
   </head>
   <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -93,10 +93,6 @@
         <h2 class="subtitle">一位菜鸡的博客</h2>
       </div>
       
-      <div class="logo">
-        <img src="/images/logo.png" alt="logo">
-      </div>
-      
     </div>
     <nav id="nav" class="nav">
       <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
@@ -105,6 +101,12 @@
         <li role="menuitem"><a href="/">首页</a></li>
         
         <li role="menuitem"><a href="/archives/">归档</a></li>
+        
+        <li role="menuitem"><a href="/categories/">分类</a></li>
+        
+        <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
         
       </ul>
     </nav>
@@ -117,30 +119,22 @@
         <div class="main-container">
           <div class="content">
             
-<div id="page" class="page">
-  <article class="article post card animate">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <span>关于</span>
+<div id="tag" class="tag page">
+  <h1 class="page-title">Markdown</h1>
+  
+  <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
+    <header id="post-header" class="post-header">
+      <h1 class="post-title-simple" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/posts/markdown/" itemprop="url">Markdown语法备忘</a>
       </h1>
+      
+      <span class="post-date">
+        <time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-05T22:07:13+08:00">01-05</time>
+      </span>
+      
     </header>
-    <main class="post-main">
-      <h2 id="about"><a href="#about" class="headerlink" title="about"></a>about</h2><ul>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-<li>1231</li>
-</ul>
-
-    </main>
-    <footer class="post-footer"></footer>
   </article>
+  
   
 </div>
 
@@ -168,10 +162,26 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">3</a></div>
+      <div><a href="/archives/">1</a></div>
     </div>
     
     
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">1</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">1</a></div>
+    </div>
     
   </div>
   
@@ -183,17 +193,6 @@
 
 
   <div class="sidebar-sticky">
-    
-    
-    
-    
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#about"><span class="toc-text">about</span></a></li></ol></div>
-    </div>
-    
     
     
     <hr>
@@ -208,20 +207,6 @@
       </ul>
     </div>
     
-    
-    <hr>
-    <div class="blogroll sidebar-item">
-      <div><i class="fas fa-link"></i>友情链接</div>
-      <ul>
-        
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
-        
-        <li><i class="fas fa-link"></i><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
-        
-        <li><i class="fas fa-link"></i><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
-        
-      </ul>
-    </div>
     
   </div>
 </aside>
@@ -240,7 +225,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">Rui</span><span class="year"><i class="far fa-copyright"></i>2018</span>
+          <span class="author">Rui</span><span class="year"><i class="far fa-copyright"></i>2018 - 2019</span>
         </div>
         
       </div>

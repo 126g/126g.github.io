@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.126g.cn/"/>
-  <updated>2018-12-25T15:19:43.614Z</updated>
+  <updated>2019-01-05T14:57:16.829Z</updated>
   <id>https://blog.126g.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test2</title>
-    <link href="https://blog.126g.cn/2018/12/25/test2/"/>
-    <id>https://blog.126g.cn/2018/12/25/test2/</id>
-    <published>2018-12-25T15:19:09.000Z</published>
-    <updated>2018-12-25T15:19:43.614Z</updated>
+    <title>Markdown语法备忘</title>
+    <link href="https://blog.126g.cn/posts/markdown/"/>
+    <id>https://blog.126g.cn/posts/markdown/</id>
+    <published>2019-01-05T14:07:13.000Z</published>
+    <updated>2019-01-05T14:57:16.829Z</updated>
     
     <summary type="html">
     
@@ -29,58 +29,18 @@
       
         
         
-          &lt;h3 id=&quot;测试文章&quot;&gt;&lt;a href=&quot;#测试文章&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;Hexo的文章、Github的README文件都要用markdown来写，简记一下Markdown的语法，备忘。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>test post</title>
-    <link href="https://blog.126g.cn/2018/12/25/test-post/"/>
-    <id>https://blog.126g.cn/2018/12/25/test-post/</id>
-    <published>2018-12-25T14:08:07.000Z</published>
-    <updated>2018-12-25T14:19:20.252Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="test" scheme="https://blog.126g.cn/categories/test/"/>
+      <category term="Other" scheme="https://blog.126g.cn/categories/Other/"/>
     
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://blog.126g.cn/2018/12/23/hello-world/"/>
-    <id>https://blog.126g.cn/2018/12/23/hello-world/</id>
-    <published>2018-12-22T18:44:31.813Z</published>
-    <updated>2018-12-22T18:44:31.813Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
+      <category term="Markdown" scheme="https://blog.126g.cn/tags/Markdown/"/>
     
   </entry>
   
