@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.126g.cn/"/>
-  <updated>2019-01-05T14:57:16.829Z</updated>
+  <updated>2019-01-05T15:18:26.469Z</updated>
   <id>https://blog.126g.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo deploy之后自动删除CNAME文件的问题</title>
+    <link href="https://blog.126g.cn/posts/hexo-cname/"/>
+    <id>https://blog.126g.cn/posts/hexo-cname/</id>
+    <published>2019-01-05T15:05:51.000Z</published>
+    <updated>2019-01-05T15:18:26.469Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;刚刚发布完了文章之后我发现没法使用自定义域名访问了&lt;/p&gt;
+&lt;p&gt;在github中设置了Custom domain后会多出一个CNAME文件&lt;/p&gt;
+&lt;p&gt;CNAME文件的内容就是自定义域名&lt;/p&gt;
+&lt;p&gt;每次&lt;code&gt;hexo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://blog.126g.cn/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown语法备忘</title>

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Hexo deploy之后自动删除CNAME文件的问题</title>
+      <link href="/posts/hexo-cname/"/>
+      <url>/posts/hexo-cname/</url>
+      
+        <content type="html"><![CDATA[<p>刚刚发布完了文章之后我发现没法使用自定义域名访问了</p><p>在github中设置了Custom domain后会多出一个CNAME文件</p><p>CNAME文件的内容就是自定义域名</p><p>每次<code>hexo deploy</code>以后CNAME文件都会被清除</p><p>解决方法很简，在hexo的source目录下创建一个CNAME文件，内容是自己的域名就好了</p><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs undefined">source/<br>├── CNAME【就是这个文件】<br>├── _posts<br>│   └── ……<br>├── about<br>│   └── index.md<br>├── categories<br>│   └── index.md<br>├── favicons<br>│   ├── android-chrome-192x192.png<br>│   ├── android-chrome-512x512.png<br>│   ├── apple-touch-icon.png<br>│   ├── browserconfig.xml<br>│   ├── favicon-16x16.png<br>│   ├── favicon-32x32.png<br>│   ├── favicon.ico<br>│   ├── mstile-150x150.png<br>│   ├── safari-pinned-tab.svg<br>│   └── site.webmanifest<br>├── images<br>│   └── avatar.png<br>└── tags<br>    └── index.md<br></code></pre></td></tr></table></figure><p>内容</p><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">blog.126g.cn<br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法备忘</title>
       <link href="/posts/markdown/"/>
       <url>/posts/markdown/</url>
@@ -43,22 +62,22 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<h2 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h2><ul><li>姓名：9e096e255bdffa30d920a7071ce4d030</li><li>邮箱：<a href="mailto:mushuang2015@gmail.com" target="_blank" rel="noopener">mushuang2015@gmail.com</a></li><li>Q Q：24fa525</li></ul><hr><ul><li>山东省某大学网络工程专业在校生</li><li>ACM逃兵</li><li>CTF菜鸟</li><li>正在学习写bug的程序猿</li></ul>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h2><ul><li>姓名：9e096e255bdffa30d920a7071ce4d030</li><li>邮箱：<a href="mailto:mushuang2015@gmail.com" target="_blank" rel="noopener">mushuang2015@gmail.com</a></li><li>Q Q：24fa525</li></ul><hr><ul><li>山东省某大学网络工程专业在校生</li><li>ACM逃兵</li><li>CTF菜鸟</li><li>正在学习写bug的程序猿</li></ul>]]></content>
       
     </entry>
     
