@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.126g.cn/"/>
-  <updated>2019-01-05T15:40:06.240Z</updated>
+  <updated>2019-01-05T15:48:26.367Z</updated>
   <id>https://blog.126g.cn/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo deploy之后自动删除CNAME文件的问题</title>
+    <title>【Hexo小技巧】首页只显示文章摘要信息</title>
+    <link href="https://blog.126g.cn/posts/hexo-abstract/"/>
+    <id>https://blog.126g.cn/posts/hexo-abstract/</id>
+    <published>2019-01-05T15:44:14.000Z</published>
+    <updated>2019-01-05T15:48:26.367Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;默认情况下首页上会显示文章的全部内容&lt;/p&gt;
+&lt;p&gt;想要只显示摘要内容至于要添加一个标签&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【Hexo小技巧】deploy之后自动删除CNAME文件的问题</title>
     <link href="https://blog.126g.cn/posts/hexo-cname/"/>
     <id>https://blog.126g.cn/posts/hexo-cname/</id>
     <published>2019-01-05T15:05:51.000Z</published>
-    <updated>2019-01-05T15:40:06.240Z</updated>
+    <updated>2019-01-05T15:48:52.961Z</updated>
     
     <summary type="html">
     
@@ -43,7 +60,7 @@
     <link href="https://blog.126g.cn/posts/markdown/"/>
     <id>https://blog.126g.cn/posts/markdown/</id>
     <published>2019-01-05T14:07:13.000Z</published>
-    <updated>2019-01-05T15:40:55.016Z</updated>
+    <updated>2019-01-05T15:42:54.424Z</updated>
     
     <summary type="html">
     

@@ -81,7 +81,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>关于 | 126g Blog - 一位菜鸡的博客</title>
+    <title>【Hexo小技巧】首页只显示文章摘要信息 | 126g Blog - 一位菜鸡的博客</title>
   </head>
   <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -106,7 +106,7 @@
         
         <li role="menuitem"><a href="/tags/">标签</a></li>
         
-        <li role="menuitem"><a href="/about/" class="current">关于</a></li>
+        <li role="menuitem"><a href="/about/">关于</a></li>
         
       </ul>
     </nav>
@@ -119,30 +119,56 @@
         <div class="main-container">
           <div class="content">
             
-<div id="page" class="page">
-  <article class="article post card animate">
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://blog.126g.cn/posts/hexo-abstract/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Rui">
+       <meta itemprop="description" content="">
+       <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="126g Blog">
+      </span>
+    </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <span>关于</span>
-      </h1>
+      <h1 class="post-title" itemprop="name headline">【Hexo小技巧】首页只显示文章摘要信息</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-05T23:44:14+08:00">2019-01-05 23:44:14</time></span>
+        </span>
+        
+        
+        
+      </div>
     </header>
-    <main class="post-main">
-      <h2 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h2><ul>
-<li>姓名：9e096e255bdffa30d920a7071ce4d030</li>
-<li>邮箱：<a href="mailto:mushuang2015@gmail.com" target="_blank" rel="noopener">mushuang2015@gmail.com</a></li>
-<li>Q Q：24fa525</li>
-</ul>
-<hr>
-<ul>
-<li>山东省某大学网络工程专业在校生</li>
-<li>ACM逃兵</li>
-<li>CTF菜鸟</li>
-<li>正在学习写bug的程序猿</li>
-</ul>
+    <main class="post-main" itemprop="articleBody">
+      <p>默认情况下首页上会显示文章的全部内容</p>
+<p>想要只显示摘要内容至于要添加一个标签</p>
+<a id="more"></a>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs undefined">这里写文章摘要<br><br>&lt;!-- more --&gt;<br><br>这里写文章的详细内容<br></code></pre></td></tr></table></figure>
 
     </main>
-    <footer class="post-footer"></footer>
+    <footer class="post-footer">
+      
+    </footer>
   </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/posts/hexo-cname/" rel="next" title="【Hexo小技巧】deploy之后自动删除CNAME文件的问题"><i class="fas fa-angle-left"></i><span class="nav-title">【Hexo小技巧】deploy之后自动删除CNAME文件的问题</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
+  
   
 </div>
 
@@ -205,12 +231,6 @@
     
     
     
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#个人信息"><span class="toc-text">个人信息</span></a></li></ol></div>
-    </div>
     
     
     
