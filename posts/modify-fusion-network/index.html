@@ -81,7 +81,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>分类: Security | 126g Blog - 一位菜鸡的博客</title>
+    <title>修改VMware Fusion虚拟机的网络设置 | 126g Blog - 一位菜鸡的博客</title>
   </head>
   <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -119,21 +119,71 @@
         <div class="main-container">
           <div class="content">
             
-<div id="category" class="category page">
-  <h1 class="page-title">Security</h1>
+<div id="post" class="page">
   
   <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/posts/crack-eydata/" itemprop="url">【破解】记录一次破解某CSGO外Gua的过程</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-10T21:27:27+08:00">01-10</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://blog.126g.cn/posts/modify-fusion-network/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Rui">
+       <meta itemprop="description" content="">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="126g Blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">修改VMware Fusion虚拟机的网络设置</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-26T23:19:06+08:00">2019-01-26 23:19:06</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Other/" itemprop="url" rel="index"><span itemprop="name">Other</span></a></span>
+        </span>
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>VMware Workstation没有mac os x版本，只能安装VMware Fusion，但是Fusion不像Workstation那样有完善的网络配置编辑器。<br>Fusion的vmnet8网卡默认网段是<code>192.168.2.0/24</code>与我家的路由器重复，需要手动修改配置文件修改一下。</p>
+<a id="more"></a>
+<p>编辑配置文件<code>/Library/Preferences/VMware Fusion/networking</code></p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs undefined">VERSION=1,0<br>answer VNET_1_DHCP yes<br>answer VNET_1_DHCP_CFG_HASH CBE14A09385CD1E21D52CAFD39F3345C9944469F<br>answer VNET_1_HOSTONLY_NETMASK 255.255.255.0<br>answer VNET_1_HOSTONLY_SUBNET 192.168.226.0<br>answer VNET_1_VIRTUAL_ADAPTER yes<br>answer VNET_8_DHCP yes<br>answer VNET_8_DHCP_CFG_HASH 9701ADC24B21F1F5476F9719AC49A6E1279AAE9A<br>answer VNET_8_HOSTONLY_NETMASK 255.255.255.0<br>answer VNET_8_HOSTONLY_SUBNET 192.168.2.0<br>answer VNET_8_NAT yes<br>answer VNET_8_VIRTUAL_ADAPTER yes<br></code></pre></td></tr></table></figure>
+<p>修改<code>answer VNET_8_HOSTONLY_SUBNET</code>这一行后面的地址就好了</p>
+<p>保存以后启动VMware Fusion即可，如果已经启动先使用<code>command + q</code>退出，然后重新打开即可。</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/VMware-Fusion/" rel="tag"><i class="fas fa-tags"></i>VMware Fusion</a>
+        
+      </div>
+      
+    </footer>
   </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/posts/crack-eydata/" rel="next" title="【破解】记录一次破解某CSGO外Gua的过程"><i class="fas fa-angle-left"></i><span class="nav-title">【破解】记录一次破解某CSGO外Gua的过程</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
   
   
 </div>
@@ -193,6 +243,11 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
     
     
     <hr>

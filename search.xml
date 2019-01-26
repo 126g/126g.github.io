@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>修改VMware Fusion虚拟机的网络设置</title>
+      <link href="/posts/modify-fusion-network/"/>
+      <url>/posts/modify-fusion-network/</url>
+      
+        <content type="html"><![CDATA[<p>VMware Workstation没有mac os x版本，只能安装VMware Fusion，但是Fusion不像Workstation那样有完善的网络配置编辑器。<br>Fusion的vmnet8网卡默认网段是<code>192.168.2.0/24</code>与我家的路由器重复，需要手动修改配置文件修改一下。</p><a id="more"></a><p>编辑配置文件<code>/Library/Preferences/VMware Fusion/networking</code></p><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs undefined">VERSION=1,0<br>answer VNET_1_DHCP yes<br>answer VNET_1_DHCP_CFG_HASH CBE14A09385CD1E21D52CAFD39F3345C9944469F<br>answer VNET_1_HOSTONLY_NETMASK 255.255.255.0<br>answer VNET_1_HOSTONLY_SUBNET 192.168.226.0<br>answer VNET_1_VIRTUAL_ADAPTER yes<br>answer VNET_8_DHCP yes<br>answer VNET_8_DHCP_CFG_HASH 9701ADC24B21F1F5476F9719AC49A6E1279AAE9A<br>answer VNET_8_HOSTONLY_NETMASK 255.255.255.0<br>answer VNET_8_HOSTONLY_SUBNET 192.168.2.0<br>answer VNET_8_NAT yes<br>answer VNET_8_VIRTUAL_ADAPTER yes<br></code></pre></td></tr></table></figure><p>修改<code>answer VNET_8_HOSTONLY_SUBNET</code>这一行后面的地址就好了</p><p>保存以后启动VMware Fusion即可，如果已经启动先使用<code>command + q</code>退出，然后重新打开即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Other </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VMware Fusion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【破解】记录一次破解某CSGO外Gua的过程</title>
       <link href="/posts/crack-eydata/"/>
       <url>/posts/crack-eydata/</url>
@@ -97,17 +122,6 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
@@ -124,6 +138,17 @@
       <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<h2 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h2><ul><li>姓名：9e096e255bdffa30d920a7071ce4d030</li><li>邮箱：<a href="mailto:mushuang2015@gmail.com" target="_blank" rel="noopener">mushuang2015@gmail.com</a></li><li>Q Q：24fa525</li></ul><hr><ul><li>山东省某大学网络工程专业在校生</li><li>ACM逃兵</li><li>CTF菜鸟</li><li>正在学习写bug的程序猿</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
